@@ -21,6 +21,7 @@ echo [96m[SUCCESS] [0mffmpeg is installed.[0m
 ) else (
 echo [91m[ERROR] [0mffmpeg is either not installed or cannot be found:
 echo [93m%cd%\ffmpeg\bin\ffmpeg.exe[0m
+echo(
 pause
 exit
 )

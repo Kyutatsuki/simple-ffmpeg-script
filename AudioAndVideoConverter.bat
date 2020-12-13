@@ -67,6 +67,9 @@ echo(  Select PNG
 call:fileSelectionSecond "%image%", "%imagefolder%", "Choose an image", image, imagefolder
 echo(      Selected: %image%
 
+echo(
+echo(
+
 set /P name=Set file name: 
 if not exist "output" mkdir output
 "ffmpeg\bin\ffmpeg.exe" -i "%audiofolder%\%audio%" -i "%imagefolder%\%image%" -s 1080x1080 -pix_fmt yuv420p -codec:a copy "output\%name%.mp4"

@@ -43,10 +43,12 @@ echo(
 
 echo(  Select MP4
 call:fileSelectionThird "%audio%", "%audiofolder%", "Choose a video", audio, audiofolder
+if not exist "%audio%" goto :start
 echo(      Selected: %audio%
 
 echo(
 echo(
+
 
 set /P name=Set file name: 
 if not exist "output" mkdir output
@@ -61,13 +63,16 @@ echo(
 
 echo(  Select MP3
 call:fileSelection "%audio%", "%audiofolder%", "Choose an audio", audio, audiofolder
+if not exist "%audio%" goto :start
 echo(      Selected: %audio%
 
 echo(
 echo(
 
+
 echo(  Select PNG
 call:fileSelectionSecond "%image%", "%imagefolder%", "Choose an image", image, imagefolder
+if not exist "%image%" goto :start
 echo(      Selected: %image%
 
 echo(

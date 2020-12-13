@@ -30,7 +30,7 @@ echo(
 echo [92m[1] [0mConvert Video to Audio
 echo [92m[2] [0mConvert Audio to Video
 echo [92m[3] [0mExit
-set /P c=Type a command. 
+set /P c=Type something here: 
 if /I "%c%" EQU "1" goto :mp3
 if /I "%c%" EQU "2" goto :mp4
 if /I "%c%" EQU "3" exit

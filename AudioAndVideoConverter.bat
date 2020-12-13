@@ -5,7 +5,7 @@ TITLE ffmpeg: AudioAndVideoConverter by Kyutatsuki
 cls
 echo(
 echo  [107m                                         [0m
-echo  [107m[32m  __FFMPEG: Audio And Video Converter__  [0m
+echo  [107m[32m  __ffmpeg: Audio And Video Converter__  [0m
 echo  [107m                                         [0m
 echo  [7m                                         [0m
 
